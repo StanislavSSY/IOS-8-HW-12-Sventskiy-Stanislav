@@ -12,6 +12,7 @@
 		356186822976DB0800655566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356186812976DB0800655566 /* ViewController.swift */; };
 		356186872976DB0900655566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356186862976DB0900655566 /* Assets.xcassets */; };
 		3561868A2976DB0900655566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356186882976DB0900655566 /* LaunchScreen.storyboard */; };
+		3561869629770C3700655566 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3561869529770C3700655566 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3561869629770C3700655566 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +106,9 @@
 			dependencies = (
 			);
 			name = "IOS-8-HW-12-Sventskiy Stanislav";
+			packageProductDependencies = (
+				3561869529770C3700655566 /* SnapKit */,
+			);
 			productName = "IOS-8-HW-12-Sventskiy Stanislav";
 			productReference = 3561867A2976DB0800655566 /* IOS-8-HW-12-Sventskiy Stanislav.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +137,9 @@
 				Base,
 			);
 			mainGroup = 356186712976DB0800655566;
+			packageReferences = (
+				3561869429770C3700655566 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 3561867B2976DB0800655566 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3561869429770C3700655566 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3561869529770C3700655566 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3561869429770C3700655566 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 356186722976DB0800655566 /* Project object */;
 }
