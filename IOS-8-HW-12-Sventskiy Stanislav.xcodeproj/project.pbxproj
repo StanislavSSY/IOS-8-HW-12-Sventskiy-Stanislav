@@ -10,7 +10,6 @@
 		3561867E2976DB0800655566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561867D2976DB0800655566 /* AppDelegate.swift */; };
 		356186802976DB0800655566 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561867F2976DB0800655566 /* SceneDelegate.swift */; };
 		356186822976DB0800655566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356186812976DB0800655566 /* ViewController.swift */; };
-		356186852976DB0800655566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356186832976DB0800655566 /* Main.storyboard */; };
 		356186872976DB0900655566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356186862976DB0900655566 /* Assets.xcassets */; };
 		3561868A2976DB0900655566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356186882976DB0900655566 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		3561867D2976DB0800655566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3561867F2976DB0800655566 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		356186812976DB0800655566 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		356186842976DB0800655566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		356186862976DB0900655566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		356186892976DB0900655566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3561868B2976DB0900655566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +54,38 @@
 		3561867C2976DB0800655566 /* IOS-8-HW-12-Sventskiy Stanislav */ = {
 			isa = PBXGroup;
 			children = (
-				3561867D2976DB0800655566 /* AppDelegate.swift */,
-				3561867F2976DB0800655566 /* SceneDelegate.swift */,
+				356186922976EEEE00655566 /* Resources */,
+				356186912976EEB500655566 /* Sources */,
+			);
+			path = "IOS-8-HW-12-Sventskiy Stanislav";
+			sourceTree = "<group>";
+		};
+		356186912976EEB500655566 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				356186932976EF7500655566 /* App */,
 				356186812976DB0800655566 /* ViewController.swift */,
-				356186832976DB0800655566 /* Main.storyboard */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		356186922976EEEE00655566 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				356186862976DB0900655566 /* Assets.xcassets */,
 				356186882976DB0900655566 /* LaunchScreen.storyboard */,
 				3561868B2976DB0900655566 /* Info.plist */,
 			);
-			path = "IOS-8-HW-12-Sventskiy Stanislav";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		356186932976EF7500655566 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3561867D2976DB0800655566 /* AppDelegate.swift */,
+				3561867F2976DB0800655566 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +148,6 @@
 			files = (
 				3561868A2976DB0900655566 /* LaunchScreen.storyboard in Resources */,
 				356186872976DB0900655566 /* Assets.xcassets in Resources */,
-				356186852976DB0800655566 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		356186832976DB0800655566 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				356186842976DB0800655566 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		356186882976DB0900655566 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,12 +301,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AD543TC98K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "IOS-8-HW-12-Sventskiy Stanislav/Info.plist";
+				INFOPLIST_FILE = "IOS-8-HW-12-Sventskiy Stanislav/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +329,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AD543TC98K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "IOS-8-HW-12-Sventskiy Stanislav/Info.plist";
+				INFOPLIST_FILE = "IOS-8-HW-12-Sventskiy Stanislav/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
