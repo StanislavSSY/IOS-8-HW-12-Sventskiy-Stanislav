@@ -40,8 +40,6 @@ class ViewController: UIViewController {
     }()
     
     // MARK: - LifeCicle
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -53,7 +51,11 @@ class ViewController: UIViewController {
     
     
     private func setupView() {
-        view.backgroundColor = .systemBlue
+        if #available(iOS 15.0, *) {
+            view.backgroundColor = .systemCyan
+        } else {
+            view.backgroundColor = .white
+        }
         
     }
     
