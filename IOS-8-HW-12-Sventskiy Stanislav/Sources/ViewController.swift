@@ -30,7 +30,14 @@ class ViewController: UIViewController {
         return label
     }()
     
-    
+    private var playButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Play", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .systemBlue
+        button.layer.cornerRadius = 15
+        return button
+    }()
     
     // MARK: - LifeCicle
     
