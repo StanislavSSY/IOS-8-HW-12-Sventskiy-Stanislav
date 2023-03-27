@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
-
+    
     var timer: Timer?
     var timeLeft = 25
     var isWorking = true
@@ -60,13 +60,30 @@ class ViewController: UIViewController {
     }
     
     private func setupHierarchy() {
-        
+        view.addSubview(timerLabel)
+        view.addSubview(statusLabel)
+        view.addSubview(playButton)
     }
     
     private func setupLayout() {
         
+        timerLabel.snp.makeConstraints { make in
+            make.top.equalTo(view).offset(290)
+            make.centerX.equalTo(view)
+        }
+        statusLabel.snp.makeConstraints { make in
+            make.height.equalTo(timerLabel).offset(50)
+            make.centerX.equalTo(view)
+        }
+        playButton.snp.makeConstraints { make in
+            make.top.equalTo(view).offset(490)
+            make.centerX.equalTo(view).offset(190)
+            make.left.equalTo(view).offset(150)
+            make.right.equalTo(view).offset(-150)
+            
+        }
+        
+        // MARK: - Actions
     }
     
-    // MARK: - Actions
 }
-
