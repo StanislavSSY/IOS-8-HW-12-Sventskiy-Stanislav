@@ -23,11 +23,11 @@ class ViewController: UIViewController {
         return label
     }()
     
-    private var labelStart: UILabel = {
-        let labelStart = UILabel()
-        
-        
-        return labelStart
+    private var statusLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 50, weight: .regular)
+        return label
     }()
     
     
